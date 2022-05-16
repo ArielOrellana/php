@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>nuevo</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="table">
+					<form action="login.html" method="post">
+						<table>
+							<tr>	
+								<td> <label for="correo">Ingrese su mail</label></td>
+								<td><input type="mail" name="email" id="correo" class="form-control" required="" placeholder="Ingrese su mail"></td>
+							</tr>
+							<tr>
+								<td><label for="pass">contraseña</label></td>
+								<td><input type="password" name="contrasenia" id="pass" class="form-control" required="" placeholder="contraseña"></td>
+							</tr>
+							<tr>
+								<td colspan="2"><button type="submit"  class="btn btn-dark">Enviar</button></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<table class="table-bordered">
+					<tr class="text-center">
+						<th>Imagen</th>
+						<th>Nombre</th>
+						<th>Descripcion</th>
+						<th>Cantidad</th>
+						<th>Archivo</th>
+					</tr>
+					<tr>
+						<td><img src="perro.jpg" width="200px" height="200px" class="rounded-circle" alt="un gatito"></td>
+						<td>gatito</td>
+						<td>gato perro</td>
+						<td>2</td>
+						<td><input type="file" name="archivo"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>suma</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+<body>
+	<form action="">
+		<div class="container">
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-4">
+						<label for="">Numero A</label>
+						<input type="number" name="" class="form-control" id="numeroA" >
+					</div>
+					<div class="col-md-4">
+						<label for="">Numero B</label>
+						<input type="number" name="" class="form-control" id="numeroB">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+					<button type="button" class="btn btn-dark" id="btnSuma">suma</button>
+			</div>
+		</div>
+	</form>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$('#btnSuma').on('click', function(){
+		// obtener valores de los inputs
+		let numeroA = $('#numeroA').val();
+		let numeroB = $('#numeroB').val();
+		// convertir a enteros los valores obtenidos
+		let numA = parseInt( numeroA );
+		let numB = parseInt( numeroB );
+		// sumar ambos enteros
+		let suma = numA + numB;
+		// mostrar el resultado de la suma en un dialogo 'alert'
+		alert('resultado: ' + suma);
+	});
+</script>
+
+</body>
+</html>

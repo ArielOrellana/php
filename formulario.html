@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>formulario</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">	
+		<h2>Nuevo producto</h2>
+		<form action="guardar.html" method="post">
+			
+				<div class="form-group">
+					<div class="row">
+					    <div class="col-md-4">
+					    	<label>Nombre</label>
+					    	<br>
+					      <input type="text" class="form-control" placeholder="Nombre">
+					    </div>
+					    <div class="col-md-4">
+					    	<label>Apellido</label>
+					    	<br>
+					      <input type="text" class="form-control" placeholder="Apellido">
+					    </div>
+					</div>
+				</div>
+			<div class="row">
+				<div class="col-md-8">
+					<div class="form-group">	
+						<label>Descripcion</label>
+						<br>
+						<textarea rows="5" class="form-control"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>Home</label>
+				<br>
+				<input type="checkbox" name="Home">
+			</div>
+			<div class="form-group">
+				<label>Destacado</label>
+				<br>
+				<input type="checkbox" name="Destacado">
+			</div>
+			<div class="form-group">
+				<label>Tamaño</label>
+				<br>
+				<input type="radio" name="Tamanio">
+				<label>grande</label>
+				<br>
+				<input type="radio" name="Tamanio">
+				<label>mediano</label>
+				<br>
+				<input type="radio" name="Tamanio">
+				<label>pequeño</label>
+			</div>
+			<div class="form-group">
+				<label>Provincia</label>
+				<br>
+				<select name="Provincia">
+					<option value="tuc">Tucuman</option>
+					<option value="salta">Salta</option>
+					<option value="sanjuan">San Juan</option>
+				</select>
+			</div>
+			<button type="submit" class="btn btn-dark">guardar</button>
+		</form>
+	</div>
+</body>
+</html>

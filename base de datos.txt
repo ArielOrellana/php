@@ -1,0 +1,45 @@
+create database admin
+create table agenda(
+... varchar(0),
+....varchar(0)
+);
+drop administracion
+insert into agenda(nombre,domicilio,telefono)
+values();
+CREATE TABLE libros(
+    titulo varchar (255),
+    autor varchar (255),
+    editorial varchar (20),
+    precio float,
+    cantidad integer
+    );
+
+INSERT INTO libros(titulo, editorial, autor, precio, cantidad)
+VALUES();
+INSERT INTO libros(titulo, editorial, autor, precio, cantidad)
+VALUES ('amor liquido', 'sugmun baumman' ,'planeta',50.5,'40');
+delete from .. where titulo=''
+CREATE TABLE users (
+    nombre varchar(20),
+    clave varchar(10),
+    PRIMARY KEY(nombre)
+    );
+insert into users (nombre, clave)
+values();
+insert into users (nombre, clave)
+values('ariel','hola');
+insert into users (nombre, clave)
+values('leonardo','queso');
+insert into users (nombre, clave)
+values('esteban','quito');
+insert into users (nombre, clave)
+values('susana','oria');
+
+codigoo int auto_increment
+CREATE TABLE libro(
+    codigoo int AUTO_INCREMENT
+    titulo varchar(50),
+    autor varchar(50),
+    editorial varchar(25),
+    PRIMARY key (codigo)
+    );
